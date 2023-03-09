@@ -4,7 +4,8 @@ const app = require("../app");
 
 
 beforeAll(async () => {
-  await mongoose.connect("mongodb://localhost:27017/attendanceTestCase");
+  await mongoose.connect("mongodb+srv://luckypatel:sttl123@cluster0.z6pvres.mongodb.net/?retryWrites=true&w=majority"
+  );
 });
 
 // // /* Dropping the database and closing connection after each test. */

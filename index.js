@@ -8,7 +8,8 @@ import students from './routes/student.js'
 
 const app = express()
 const port =  8000
-const DATABASE_URL = "mongodb://localhost:27017"
+const DATABASE_URL = "mongodb+srv://luckypatel:sttl123@cluster0.z6pvres.mongodb.net/?retryWrites=true&w=majority"
+
 
 app.use(cors("*"))
 app.use(express.json())
