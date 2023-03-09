@@ -1,9 +1,6 @@
-// const express = require("express");
-// const router = express.Router();
-// const students = require("./routes/student.js");
-// const app = express();
-
 import express from 'express'
+import students from './routes/student.js'
+
 
 const app = express()
 
@@ -17,6 +14,7 @@ app.get("/", (req, res) => {
   res.status(200).json({ alive: "True" });
 });
 
+app.use("/student", students);
 
 
 
